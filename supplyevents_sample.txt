@@ -1,0 +1,27 @@
+opennms=# select * from supplyevents;
+ id |           event
+----+---------------------------
+  1 | mfp/konica/toner/tn319k/
+  2 | mfp/konica/toner/tn319c/
+  3 | mfp/konica/toner/tn319m/
+  4 | mfp/konica/toner/tn319y/
+  5 | mfp/kyocera/toner/tk130/
+  6 | mfp/kyocera/toner/tk1140/
+  7 | mfp/konica/toner/tn216k/
+  8 | mfp/konica/toner/tn216c/
+  9 | mfp/konica/toner/tn216m/
+ 10 | mfp/konica/toner/tn216y/
+ 11 | mfp/konica/toner/tn512k/
+ 12 | mfp/konica/toner/tn512c/
+ 13 | mfp/konica/toner/tn512m/
+ 14 | mfp/konica/toner/tn512y/
+ 15 | mfp/konica/toner/tnp22y/
+ 16 | mfp/konica/toner/tnp22c/
+ 17 | mfp/konica/toner/tnp22m/
+ 18 | mfp/konica/toner/tnp22b/
+ 19 | mfp/kyocera/toner/tk865y/
+ 20 | mfp/kyocera/toner/tk865m/
+ 21 | mfp/kyocera/toner/tk865c/
+ 22 | mfp/kyocera/toner/tk865k/
+(22 rows)
+opennms=#
