@@ -1,0 +1,37 @@
+<thresholding-config xmlns="http://xmlns.opennms.org/xsd/config/thresholding-config">
+	<!-- ...other stuff here... -->
+    <group name="Kyocera250" rrdRepository="/var/lib/opennms/rrd/snmp/">
+        <expression type="low" ds-type="prtMarkerSuppliesIndex"
+            value="30.0" rearm="80.0" trigger="1"
+            ds-label="prtMarkerSuppliesDescription"
+            triggeredUEI="uei.opennms.org/custom/mfp/kyocera/toner/tk865c/low"
+            rearmedUEI="uei.opennms.org/custom/mfp/kyocera/toner/tk865c/full"
+            filterOperator="or" expression="prtMSLevel / prtMSMaxCapacity * 100">
+            <resource-filter field="prtMarkerSuppliesDescription">^TK\-865C</resource-filter>
+        </expression>
+        <expression type="low" ds-type="prtMarkerSuppliesIndex"
+            value="30.0" rearm="80.0" trigger="1"
+            ds-label="prtMarkerSuppliesDescription"
+            triggeredUEI="uei.opennms.org/custom/mfp/kyocera/toner/tk865y/low"
+            rearmedUEI="uei.opennms.org/custom/mfp/kyocera/toner/tk865y/full"
+            filterOperator="or" expression="prtMSLevel / prtMSMaxCapacity * 100">
+            <resource-filter field="prtMarkerSuppliesDescription">^TK\-865Y</resource-filter>
+        </expression>
+        <expression type="low" ds-type="prtMarkerSuppliesIndex"
+            value="30.0" rearm="80.0" trigger="1"
+            ds-label="prtMarkerSuppliesDescription"
+            triggeredUEI="uei.opennms.org/custom/mfp/kyocera/toner/tk865m/low"
+            rearmedUEI="uei.opennms.org/custom/mfp/kyocera/toner/tk865m/full"
+            filterOperator="or" expression="prtMSLevel / prtMSMaxCapacity * 100">
+            <resource-filter field="prtMarkerSuppliesDescription">^TK\-865M</resource-filter>
+        </expression>
+        <expression type="low" ds-type="prtMarkerSuppliesIndex"
+            value="30.0" rearm="80.0" trigger="1"
+            ds-label="prtMarkerSuppliesDescription"
+            triggeredUEI="uei.opennms.org/custom/mfp/kyocera/toner/tk865k/low"
+            rearmedUEI="uei.opennms.org/custom/mfp/kyocera/toner/tk865k/full"
+            filterOperator="or" expression="prtMSLevel / prtMSMaxCapacity * 100">
+            <resource-filter field="prtMarkerSuppliesDescription">^TK\-865K</resource-filter>
+        </expression>
+    </group>
+</thresholding-config>
