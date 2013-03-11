@@ -1,0 +1,17 @@
+<events>
+	<!-- ...other stuff here... -->
+    <event>
+        <uei>uei.opennms.org/custom/mfp/konica/toner/tn319c/order</uei>
+        <event-label>User defined threshold event: Konica Toner TN319C Order</event-label>
+        <descr>Tonerbestellung: %nodelabel%</descr>
+        <logmsg dest="logndisplay">%parm[all]%</logmsg>
+        <severity>Normal</severity>
+    </event>
+    <event>
+        <uei>uei.opennms.org/custom/mfp/kyocera/toner/tk865m/order</uei>
+        <event-label>User defined threshold event: Kyocera Toner TK865M Order</event-label>
+        <descr>Tonerbestellung: %nodelabel%</descr>
+        <logmsg dest="logndisplay">%parm[all]%</logmsg>
+        <severity>Normal</severity>
+    </event>
+</events>
