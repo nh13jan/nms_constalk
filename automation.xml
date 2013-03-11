@@ -1,0 +1,19 @@
+ 
+ <automations>
+  <!-- ...other stuff here... --> 
+  <automation 
+    name="orderResource" 
+    interval="1800000" 
+    trigger-name="orderResourceTrigger"  
+    action-name="orderResourceAction" 
+    action-event="orderResourceActionEvent" 
+    active="true"
+  />
+  <automation 
+    name="rearmResourceCheck" 
+	interval="1800000" 
+	trigger-name="rearmResourceCheckTrigger" 
+	action-name="rearmResourceCheckAction" 
+	active="true" 
+  />
+</automations>

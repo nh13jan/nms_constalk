@@ -1,0 +1,10 @@
+<action-events>  
+  <!-- ...other stuff here... --> 
+  <action-event name="orderResourceActionEvent" for-each-result="true">
+    <assignment type="field" name="uei" value="${_orderuei}"/>
+    <assignment type="field" name="nodeid" value="${_nodeid}"/>
+    <assignment type="field" name="interface" value="${_ipaddr}"/>
+    <assignment type="field" name="eventparms" value="${_eventparms}"/>
+    <assignment type="field" name="eventseverity" value="${_eventseverity}"/>
+  </action-event>
+</action-events>  

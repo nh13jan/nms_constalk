@@ -1,0 +1,35 @@
+<actions>  
+  <!-- ...other stuff here... --> 
+  <action name="orderResourceAction">
+    <statement>
+      update
+        events
+      set
+        eventackuser = 'admin',
+        eventacktime = ${_ts},
+        eventseverity = 3
+      where
+        nodeid=${_nodeid} and
+        eventuei = ${_lowuei} and
+        eventackuser is null
+    </statement>
+  </action>
+  <action name="rearmResourceCheckAction">
+    <statement>
+      update
+        events
+      set
+        eventackuser = 'admin',
+        eventacktime = ${_ts},
+        eventseverity = 2
+      where
+        nodeid = ${_nodeid} and
+        (
+          eventuei = ${_fulluei} or
+          eventuei = ${_orderuei} or
+          eventuei = ${_lowuei}
+        ) and
+        eventackuser is null
+    </statement>
+  </action>
+</actions>  
